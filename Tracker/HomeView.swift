@@ -9,23 +9,17 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var showAddView = false
+    @StateObject var vm = HomeViewModel()
+    
     var body: some View {
         VStack {
-            Text("Habits")
-                .frame(maxWidth: .infinity)
-                .overlay(alignment: .trailing) {
-                    Button {
-                        showAddView.toggle()
-                    } label: {
-                        Image(systemName: "plus")
-                            .padding()
-                    }
-                }
+            titleBar
+            
+            
             ScrollView(.vertical, showsIndicators: false) {
-                ForEach(0..<4, id: \.self) {_ in
-                    Text("NEOBNEIO")
-                        .frame(height: 300)
-                        .background(Color.blue)
+                ForEach(0..<2, id: \.self) {_ in
+                    HabitCard()
+                    
                 }
             }
         }
@@ -40,5 +34,22 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+extension HomeView {
+    private var titleBar: some View {
+        Text("Habits")
+            .font(.title)
+            .fontWeight(.semibold)
+            .frame(maxWidth: .infinity)
+            .overlay(alignment: .trailing) {
+                Button {
+                    showAddView.toggle()
+                } label: {
+                    Image(systemName: "plus")
+                        .padding()
+                }
+            }
     }
 }

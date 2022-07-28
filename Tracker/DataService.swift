@@ -31,4 +31,42 @@ class DataService {
             return []
         }
     }
+    
+    func save() {
+        do {
+            try container.viewContext.save()
+        } catch  {
+            print("Error saving to Core Data \(error)")
+        }
+    }
+    
+    func add(color: String, isRemainderOn: Bool, notificationDate: Date, ids: [String], text: String, title: String, weekDays: [String]) {
+        let entity = Habit(context: container.viewContext)
+        entity.color = color
+        entity.dataAdded = Date()
+        entity.isRemainderOn = isRemainderOn
+        entity.notificatioinDate = notificationDate
+        entity.notificationIDs = ids
+        entity.remainderText = text
+        entity.title = title
+        entity.weekDays = weekDays
+        save()
+    }
+    
+    func update(entity: Habit, color: String, isRemainderOn: Bool, notificationDate: Date, ids: [String], text: String, title: String, weekDays: [String]) {
+        entity.color = color
+        entity.dataAdded = Date()
+        entity.isRemainderOn = isRemainderOn
+        entity.notificatioinDate = notificationDate
+        entity.notificationIDs = ids
+        entity.remainderText = text
+        entity.title = title
+        entity.weekDays = weekDays
+        save()
+    }
+    
+    func delete(entity: Habit) {
+        container.viewContext.delete(entity)
+        save()
+    }
 }

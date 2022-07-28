@@ -5,10 +5,10 @@
         <attribute name="dataAdded" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="isRemainderOn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="notificatioinDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="notificationIDs" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="notificationIDs" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
         <attribute name="remainderText" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <attribute name="weekDays" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="weekDays" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
     </entity>
     <elements>
         <element name="Habit" positionX="-54" positionY="-9" width="128" height="149"/>
