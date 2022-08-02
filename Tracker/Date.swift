@@ -10,7 +10,7 @@ import Foundation
 extension Date {
     private var dayFormatter: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd"
+        formatter.dateFormat = "MMM d, h:mm a"
         return formatter
     }
     

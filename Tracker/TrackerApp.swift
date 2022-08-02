@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TrackerApp: App {
+    @StateObject var vm = TaskHomeViewModel()
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            TaskHome()
+                .environmentObject(vm)
         }
     }
 }

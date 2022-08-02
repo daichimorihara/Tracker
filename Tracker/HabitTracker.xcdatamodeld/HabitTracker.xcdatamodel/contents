@@ -10,7 +10,14 @@
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="weekDays" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
     </entity>
+    <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="Habit" positionX="-54" positionY="-9" width="128" height="149"/>
+        <element name="TaskEntity" positionX="-54" positionY="54" width="128" height="89"/>
     </elements>
 </model>

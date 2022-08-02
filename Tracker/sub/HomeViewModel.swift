@@ -18,12 +18,12 @@ class HomeViewModel: ObservableObject {
     
     init() {
         //fetchHabits()
-        Task {
-            await requestNotificationAccess()
-        }
-        Task {
-            await scheduleNotification()
-        }
+//        Task {
+//            await requestNotificationAccess()
+//        }
+//        Task {
+//            await scheduleNotification()
+//        }
     }
     
     func requestNotificationAccess() async {

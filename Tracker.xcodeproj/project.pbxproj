@@ -19,6 +19,13 @@
 		42064FC728914D5B00157E33 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42064FC628914D5B00157E33 /* HomeViewModel.swift */; };
 		42064FC928914D7000157E33 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42064FC828914D7000157E33 /* DataService.swift */; };
 		42064FCC28914D8900157E33 /* HabitTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42064FCA28914D8900157E33 /* HabitTracker.xcdatamodeld */; };
+		42156A8F2898EA3C0038FC98 /* TaskHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A8E2898EA3C0038FC98 /* TaskHome.swift */; };
+		42156A912898EB1A0038FC98 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A902898EB1A0038FC98 /* TaskCard.swift */; };
+		42156A932898ECD00038FC98 /* TaskAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A922898ECD00038FC98 /* TaskAdd.swift */; };
+		42156A952898F38F0038FC98 /* TaskDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A942898F38F0038FC98 /* TaskDataService.swift */; };
+		42156A972898F6D00038FC98 /* TaskHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A962898F6D00038FC98 /* TaskHomeViewModel.swift */; };
+		42156A992898FD980038FC98 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A982898FD980038FC98 /* Preview.swift */; };
+		42156A9B28992AFA0038FC98 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A9A28992AFA0038FC98 /* TaskModel.swift */; };
 		42D233E3289230700094CE87 /* HabitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D233E2289230700094CE87 /* HabitCard.swift */; };
 		42D233E5289240B80094CE87 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D233E4289240B80094CE87 /* Date.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +63,13 @@
 		42064FC628914D5B00157E33 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		42064FC828914D7000157E33 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		42064FCB28914D8900157E33 /* HabitTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HabitTracker.xcdatamodel; sourceTree = "<group>"; };
+		42156A8E2898EA3C0038FC98 /* TaskHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHome.swift; sourceTree = "<group>"; };
+		42156A902898EB1A0038FC98 /* TaskCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCard.swift; sourceTree = "<group>"; };
+		42156A922898ECD00038FC98 /* TaskAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAdd.swift; sourceTree = "<group>"; };
+		42156A942898F38F0038FC98 /* TaskDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataService.swift; sourceTree = "<group>"; };
+		42156A962898F6D00038FC98 /* TaskHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHomeViewModel.swift; sourceTree = "<group>"; };
+		42156A982898FD980038FC98 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		42156A9A28992AFA0038FC98 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		42D233E2289230700094CE87 /* HabitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCard.swift; sourceTree = "<group>"; };
 		42D233E4289240B80094CE87 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,17 +122,20 @@
 		42064F9728914CFB00157E33 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				42156A8D2898EA1C0038FC98 /* sub */,
 				42064F9828914CFB00157E33 /* TrackerApp.swift */,
 				42064F9A28914CFB00157E33 /* ContentView.swift */,
 				42064F9C28914CFB00157E33 /* Assets.xcassets */,
 				42064F9E28914CFB00157E33 /* Preview Content */,
-				42064FC228914D1500157E33 /* AddNewView.swift */,
-				42064FC428914D3200157E33 /* HomeView.swift */,
-				42064FC628914D5B00157E33 /* HomeViewModel.swift */,
-				42064FC828914D7000157E33 /* DataService.swift */,
 				42064FCA28914D8900157E33 /* HabitTracker.xcdatamodeld */,
-				42D233E2289230700094CE87 /* HabitCard.swift */,
 				42D233E4289240B80094CE87 /* Date.swift */,
+				42156A8E2898EA3C0038FC98 /* TaskHome.swift */,
+				42156A902898EB1A0038FC98 /* TaskCard.swift */,
+				42156A922898ECD00038FC98 /* TaskAdd.swift */,
+				42156A942898F38F0038FC98 /* TaskDataService.swift */,
+				42156A962898F6D00038FC98 /* TaskHomeViewModel.swift */,
+				42156A982898FD980038FC98 /* Preview.swift */,
+				42156A9A28992AFA0038FC98 /* TaskModel.swift */,
 			);
 			path = Tracker;
 			sourceTree = "<group>";
@@ -146,6 +163,18 @@
 				42064FB528914CFB00157E33 /* TrackerUITestsLaunchTests.swift */,
 			);
 			path = TrackerUITests;
+			sourceTree = "<group>";
+		};
+		42156A8D2898EA1C0038FC98 /* sub */ = {
+			isa = PBXGroup;
+			children = (
+				42D233E2289230700094CE87 /* HabitCard.swift */,
+				42064FC828914D7000157E33 /* DataService.swift */,
+				42064FC628914D5B00157E33 /* HomeViewModel.swift */,
+				42064FC428914D3200157E33 /* HomeView.swift */,
+				42064FC228914D1500157E33 /* AddNewView.swift */,
+			);
+			path = sub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,15 +307,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42156A932898ECD00038FC98 /* TaskAdd.swift in Sources */,
 				42064FC328914D1500157E33 /* AddNewView.swift in Sources */,
 				42064FC528914D3200157E33 /* HomeView.swift in Sources */,
 				42064F9B28914CFB00157E33 /* ContentView.swift in Sources */,
+				42156A912898EB1A0038FC98 /* TaskCard.swift in Sources */,
 				42064FC928914D7000157E33 /* DataService.swift in Sources */,
+				42156A972898F6D00038FC98 /* TaskHomeViewModel.swift in Sources */,
+				42156A992898FD980038FC98 /* Preview.swift in Sources */,
 				42D233E3289230700094CE87 /* HabitCard.swift in Sources */,
 				42064FCC28914D8900157E33 /* HabitTracker.xcdatamodeld in Sources */,
 				42064FC728914D5B00157E33 /* HomeViewModel.swift in Sources */,
+				42156A952898F38F0038FC98 /* TaskDataService.swift in Sources */,
 				42D233E5289240B80094CE87 /* Date.swift in Sources */,
 				42064F9928914CFB00157E33 /* TrackerApp.swift in Sources */,
+				42156A9B28992AFA0038FC98 /* TaskModel.swift in Sources */,
+				42156A8F2898EA3C0038FC98 /* TaskHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
