@@ -7,12 +7,25 @@
 
 import SwiftUI
 
+//@main
+//struct TrackerApp: App {
+//    @StateObject var vm = TaskHomeViewModel()
+//    var body: some Scene {
+//        WindowGroup {
+//            TaskHome()
+//                .environmentObject(vm)
+//        }
+//    }
+//}
+
 @main
 struct TrackerApp: App {
-    @StateObject var vm = TaskHomeViewModel()
+    let persistenceController = PersistenceController.shared
+    @StateObject var vm = RemainderHomeViewModel()
     var body: some Scene {
         WindowGroup {
-            TaskHome()
+            ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(vm)
         }
     }

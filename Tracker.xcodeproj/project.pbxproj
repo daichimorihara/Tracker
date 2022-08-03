@@ -26,6 +26,12 @@
 		42156A972898F6D00038FC98 /* TaskHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A962898F6D00038FC98 /* TaskHomeViewModel.swift */; };
 		42156A992898FD980038FC98 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A982898FD980038FC98 /* Preview.swift */; };
 		42156A9B28992AFA0038FC98 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42156A9A28992AFA0038FC98 /* TaskModel.swift */; };
+		423F6E6B289A725B00B677ED /* AddRemainderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F6E6A289A725B00B677ED /* AddRemainderView.swift */; };
+		423F6E6D289A860600B677ED /* FView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F6E6C289A860600B677ED /* FView.swift */; };
+		424EC844289A3C5D00B13D8B /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EC843289A3C5D00B13D8B /* PersistentController.swift */; };
+		424EC846289A3D5A00B13D8B /* RemainderHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EC845289A3D5A00B13D8B /* RemainderHome.swift */; };
+		424EC848289A446A00B13D8B /* RemainderHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EC847289A446A00B13D8B /* RemainderHomeViewModel.swift */; };
+		424EC84A289A478C00B13D8B /* FilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EC849289A478C00B13D8B /* FilteredView.swift */; };
 		42D233E3289230700094CE87 /* HabitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D233E2289230700094CE87 /* HabitCard.swift */; };
 		42D233E5289240B80094CE87 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D233E4289240B80094CE87 /* Date.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +76,12 @@
 		42156A962898F6D00038FC98 /* TaskHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHomeViewModel.swift; sourceTree = "<group>"; };
 		42156A982898FD980038FC98 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		42156A9A28992AFA0038FC98 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		423F6E6A289A725B00B677ED /* AddRemainderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemainderView.swift; sourceTree = "<group>"; };
+		423F6E6C289A860600B677ED /* FView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FView.swift; sourceTree = "<group>"; };
+		424EC843289A3C5D00B13D8B /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
+		424EC845289A3D5A00B13D8B /* RemainderHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainderHome.swift; sourceTree = "<group>"; };
+		424EC847289A446A00B13D8B /* RemainderHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainderHomeViewModel.swift; sourceTree = "<group>"; };
+		424EC849289A478C00B13D8B /* FilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredView.swift; sourceTree = "<group>"; };
 		42D233E2289230700094CE87 /* HabitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCard.swift; sourceTree = "<group>"; };
 		42D233E4289240B80094CE87 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,20 +134,15 @@
 		42064F9728914CFB00157E33 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				424EC842289A3C2D00B13D8B /* Mr.Re */,
+				424EC840289A3BC900B13D8B /* Extension */,
+				424EC83F289A3BAB00B13D8B /* remainder */,
 				42156A8D2898EA1C0038FC98 /* sub */,
+				42064F9C28914CFB00157E33 /* Assets.xcassets */,
 				42064F9828914CFB00157E33 /* TrackerApp.swift */,
 				42064F9A28914CFB00157E33 /* ContentView.swift */,
-				42064F9C28914CFB00157E33 /* Assets.xcassets */,
-				42064F9E28914CFB00157E33 /* Preview Content */,
 				42064FCA28914D8900157E33 /* HabitTracker.xcdatamodeld */,
-				42D233E4289240B80094CE87 /* Date.swift */,
-				42156A8E2898EA3C0038FC98 /* TaskHome.swift */,
-				42156A902898EB1A0038FC98 /* TaskCard.swift */,
-				42156A922898ECD00038FC98 /* TaskAdd.swift */,
-				42156A942898F38F0038FC98 /* TaskDataService.swift */,
-				42156A962898F6D00038FC98 /* TaskHomeViewModel.swift */,
-				42156A982898FD980038FC98 /* Preview.swift */,
-				42156A9A28992AFA0038FC98 /* TaskModel.swift */,
+				42064F9E28914CFB00157E33 /* Preview Content */,
 			);
 			path = Tracker;
 			sourceTree = "<group>";
@@ -175,6 +182,41 @@
 				42064FC228914D1500157E33 /* AddNewView.swift */,
 			);
 			path = sub;
+			sourceTree = "<group>";
+		};
+		424EC83F289A3BAB00B13D8B /* remainder */ = {
+			isa = PBXGroup;
+			children = (
+				42156A8E2898EA3C0038FC98 /* TaskHome.swift */,
+				42156A902898EB1A0038FC98 /* TaskCard.swift */,
+				42156A922898ECD00038FC98 /* TaskAdd.swift */,
+				42156A942898F38F0038FC98 /* TaskDataService.swift */,
+				42156A962898F6D00038FC98 /* TaskHomeViewModel.swift */,
+				42156A9A28992AFA0038FC98 /* TaskModel.swift */,
+			);
+			path = remainder;
+			sourceTree = "<group>";
+		};
+		424EC840289A3BC900B13D8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				42156A982898FD980038FC98 /* Preview.swift */,
+				42D233E4289240B80094CE87 /* Date.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		424EC842289A3C2D00B13D8B /* Mr.Re */ = {
+			isa = PBXGroup;
+			children = (
+				424EC843289A3C5D00B13D8B /* PersistentController.swift */,
+				424EC845289A3D5A00B13D8B /* RemainderHome.swift */,
+				424EC847289A446A00B13D8B /* RemainderHomeViewModel.swift */,
+				424EC849289A478C00B13D8B /* FilteredView.swift */,
+				423F6E6A289A725B00B677ED /* AddRemainderView.swift */,
+				423F6E6C289A860600B677ED /* FView.swift */,
+			);
+			path = Mr.Re;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424EC846289A3D5A00B13D8B /* RemainderHome.swift in Sources */,
 				42156A932898ECD00038FC98 /* TaskAdd.swift in Sources */,
 				42064FC328914D1500157E33 /* AddNewView.swift in Sources */,
 				42064FC528914D3200157E33 /* HomeView.swift in Sources */,
@@ -316,9 +359,14 @@
 				42156A972898F6D00038FC98 /* TaskHomeViewModel.swift in Sources */,
 				42156A992898FD980038FC98 /* Preview.swift in Sources */,
 				42D233E3289230700094CE87 /* HabitCard.swift in Sources */,
+				424EC848289A446A00B13D8B /* RemainderHomeViewModel.swift in Sources */,
 				42064FCC28914D8900157E33 /* HabitTracker.xcdatamodeld in Sources */,
+				424EC844289A3C5D00B13D8B /* PersistentController.swift in Sources */,
 				42064FC728914D5B00157E33 /* HomeViewModel.swift in Sources */,
 				42156A952898F38F0038FC98 /* TaskDataService.swift in Sources */,
+				423F6E6B289A725B00B677ED /* AddRemainderView.swift in Sources */,
+				424EC84A289A478C00B13D8B /* FilteredView.swift in Sources */,
+				423F6E6D289A860600B677ED /* FView.swift in Sources */,
 				42D233E5289240B80094CE87 /* Date.swift in Sources */,
 				42064F9928914CFB00157E33 /* TrackerApp.swift in Sources */,
 				42156A9B28992AFA0038FC98 /* TaskModel.swift in Sources */,

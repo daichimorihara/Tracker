@@ -18,6 +18,8 @@ class DeveloperPreview {
     static let instance = DeveloperPreview()
     private init() {}
     
+    let remanderVM = RemainderHomeViewModel()
+    
     let homeVM = TaskHomeViewModel()
     let taskModel = TaskModel(id: UUID().uuidString,
                               title: "Twitter Post",
